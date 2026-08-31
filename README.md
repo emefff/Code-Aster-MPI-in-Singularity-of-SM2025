@@ -30,7 +30,7 @@ Download the necessary Singularity Container of Salome-Meca 2025 from https://op
 
 and place it in your home folder. The file size is ~5.7GiB. The exact filename is salome_meca-lgpl-2025.1.0-1-20251026-scibian-12.sif .
 
-Open a bash terminal and
+Open a bash terminal and check your singularity version
 
 ```
 singularity --version
@@ -182,7 +182,7 @@ A blank run of Asterstudy should show "Parallélisme MPI : actif" in the log:
   <img src="https://github.com/user-attachments/assets/399d963f-35e5-4006-81d1-59af43a97334" style="width:75%; height:auto;" />
 </p>
 
-If all this worked correctly, you are ready to use Coder_Aster 17.5 with MPI directly in Salome-Meca 2025.
+If all this worked correctly, you are ready to use Coder_Aster 17.5 with MPI directly in Salome-Meca 2025. We assume this whole process also works with apptainer, but we haven't checked. 
 
 Have fun,
 
