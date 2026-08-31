@@ -152,6 +152,32 @@ Write the container file with
 singularity build SalomeMeca2025_mpi.sif SalomeMeca2025_mpi
 ```
 
+If all went well, move the container back to your user's home
+
+```
+mv alomeMeca2025_mpi.sif ~/
+cd
+```
+
+You can launch this container with (the binds are necessary for Asterstudy to work correctly, as is using the explicit command for salome. Why? WDK):
+
+```
+singularity exec --nv \
+  --bind /tmp:/tmp \
+  --bind /tmp:/local00/tmp \
+  SalomeMeca2025_mpi.sif \
+  /opt/salome-meca/2025/V2025.1.0_scibian_univ/prerequisites/Cea_archive-9130/salome
+```
+
+If you do not have an Nvidia GPU remove the "--n" from above command.
+
+Salome-Meca 2025 should launch correctly. The version drop-down menu in Asterstudy should feature the new version:
+
+
+A blank run of Asterstudy should show "MPI: actif" in the log:
+
+
+
 
 
                 
