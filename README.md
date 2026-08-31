@@ -79,10 +79,22 @@ git clone --branch 17.5.0 https://gitlab.com/codeaster/src.git
 git clone https://gitlab.com/codeaster/devtools.git
 ```
 
-Build this version, all the correct prerequisites are already present in the container. You can check this on Code_Aster's GitLab page: https://gitlab.com/codeaster-opensource-documentation/opensource-installation-development/-/blob/main/devel/changelog.md
+Let'S build this version, all the correct prerequisites are already present in the container. You can check this on Code_Aster's GitLab page: https://gitlab.com/codeaster-opensource-documentation/opensource-installation-development/-/blob/main/devel/changelog.md . 
 
+```
+cd src
+./waf configure
+./waf install -j 8
+./waf install test -n zzzz506c
+```
 
+The test in the end should show something like " 'test' finished successfully (3.546s) ". 
 
+We need to register CA 17.5 in Salome Meca so it can be chosen in the drop-down menu:
+
+```
+echo "vers : stable_mpi:/opt/codeaster/install/mpi/share/aster" >> /opt/salome-meca/2025/V2025.1.0_scibian_univ/tools/Code_aster_frontend-202510/etc/codeaster/aster
+```
 
 
 
