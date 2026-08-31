@@ -38,7 +38,15 @@ Open a bash terminal and
 singularity --version
 ```
 
-to check your version, it should be around the version above (version 3 should be avoided).
+to check your version, it should be around the version above (version 3 should be avoided). If necessary, upgrade singularity.
+
+We need a new dir for this whole process so
+
+```
+mkdir SalomeMeca2025_MPI
+```
+
+
 
 
 
