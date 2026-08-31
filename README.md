@@ -16,7 +16,7 @@ This recipe and the resulting container were tested in Ubuntu 24.04 LTS. Please 
 appear and Salome-Meca would not launch. The solution is to comment some of these libs in the nvliblist.conf file of your singularity or apptainer installation. Have a look at the code aster forum for this at https://code-aster.org/forum/ . In our setup these libs have to be commented:
 
 >#libEGL.so
-#libGLdispatch.so
-#libGL.so
-#libGLX.so
+>#libGLdispatch.so
+>#libGL.so
+>#libGLX.so
 
