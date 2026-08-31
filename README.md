@@ -9,7 +9,7 @@ ________________________________________________________________________________
 
 In the following tutorial we will show how to build the MPI Version of Code Aster 17.5 inside the Singularity Container of Salome-Meca 2025. This work is largely based on https://github.com/jcugnoni/SalomeMeca2024_Code-AsterMPI with some updates and minor changes in the process.
 
-This recipe and the resulting container were tested in Ubuntu 24.04 LTS. Please be aware, that some slight modifications might be necessary when using Ubuntu 24.04 LTS with an Nvidia GPU. One well known caveat are incompatible GLIBC libraries. Errors similar to 
+This recipe and the resulting container were tested in Ubuntu 24.04 LTS. Please be aware, that some slight modifications might be necessary when using Ubuntu 24.04 LTS with an Nvidia GPU after a fresh install of singularity or apptainer. One well known caveat are incompatible GLIBC libraries. Errors similar to 
 
 > SALOME_Session_Server_No_Server: /lib/x86_64-linux-gnu/libc.so.6: version `GLIBC_2.38' not found (required by /.singularity.d/libs/libGLX.so.0)
 
