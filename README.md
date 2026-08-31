@@ -172,10 +172,9 @@ singularity exec --nv \
 If you do not have an Nvidia GPU remove the "--n" from above command.
 
 Salome-Meca 2025 should launch correctly. The version drop-down menu in Asterstudy should feature the new version:
+<img width="936" height="702" alt="Bildschirmfoto vom 2026-08-31 13-26-33" src="https://github.com/user-attachments/assets/bbe8cc95-c2a6-427f-b4b2-ad21cc80dca2" />
 
-
-<img src="https://github.com/user-attachments/assets/assets/9471ac73-1401-4541-92eb-97ca6a8d1d93" width="500">
-
+<img src="[PASTE_THE_COPIED_URL_HERE](https://github.com/user-attachments/assets/bbe8cc95-c2a6-427f-b4b2-ad21cc80dca2)" width="500">
 
 A blank run of Asterstudy should show "MPI: actif" in the log:
 
