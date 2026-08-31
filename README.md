@@ -138,6 +138,22 @@ and/or replace it with this code
 >                proc = run(cmdpfx+cmd, shell=True, check=False, capture_output=False)
 
 If you are not familiar with Python, the whitespace (spaces before code must remain the same, it is exactly like shown here) is most important. If you don't keep it exactly like it was, this won't work correctly. 
+
+Save the file with CTRL + O and pressing ENTER, exit nano with CTRL+X (CTRL+S and then CTRL+X also works).
+
+Exit the container, the indicator should change back to the normal bash of your user:
+```
+exit
+```
+
+Write the container file with
+
+```
+singularity build SalomeMeca2025_mpi.sif SalomeMeca2025_mpi
+```
+
+
+
                 
 
 
