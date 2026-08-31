@@ -111,9 +111,33 @@ ls -l /usr/local/bin/as_run
 
 It should show " /usr/local/bin/as_run -> /opt/salome-meca/2025/V2025.1.0_scibian_univ/tools/Code_aster_frontend-202510/bin/as_run "
 
-```
+Fixing of run_aster_main.py:
+Make a copy of run_aster_main.py in case we need to go back, shouldn't be necessary though
 
 ```
+cd /opt/codeaster/install/mpi/lib/aster/run_aster
+cp run_aster_main.py run_aster_main.orig
+```
+
+We need to edit this run_aster_main.py, as it is very long and we only have nano inside the container we directly jump to line 480 with:
+
+```
+nano run_aster_main.py
+```
+> CTRL+SHIFT 7
+
+shows " Entrez: numéro de ligne, numéro  de colonne: "
+
+> type '480' and press ENTER
+
+Editor should jump to line 480, search for the line beginning with "proc = ......." and comment this line:
+>                # proc = run(cmd, shell=True, check=False)
+
+>                cmdpfx ="lst=`env | grep OMPI_ | cut -d = -f 1`; for item in $lst; do echo 'unset ' $item; unset $item; done; export PATH=/usr/local/bin:$PATH; "
+                proc = run(cmdpfx+cmd, shell=True, check=False, capture_output=False)
+
+                
+
 
 
 
