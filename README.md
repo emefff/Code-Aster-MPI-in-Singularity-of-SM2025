@@ -175,13 +175,13 @@ Salome-Meca 2025 should launch correctly. The version drop-down menu in Asterstu
 
 
 <p align="center">
-  <img src="https://github.com/user-attachments/assets/b64dc94a-2357-4725-8836-c8bf11012b87" style="width:50%; height:auto;" />
+  <img src="https://github.com/user-attachments/assets/b64dc94a-2357-4725-8836-c8bf11012b87" style="width:25%; height:auto;" />
 </p>
 
 A blank run of Asterstudy should show "Parallélisme MPI : actif" in the log:
 
 <p align="center">
-  <img src="https://github.com/user-attachments/assets/399d963f-35e5-4006-81d1-59af43a97334" style="width:50%; height:auto;" />
+  <img src="https://github.com/user-attachments/assets/399d963f-35e5-4006-81d1-59af43a97334" style="width:75%; height:auto;" />
 </p>
 
 If all this worked correctly, you are ready to use Coder_Aster 17.5 with MPI directly in Salome-Meca 2025.
