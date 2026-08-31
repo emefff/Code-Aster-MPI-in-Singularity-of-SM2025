@@ -150,7 +150,7 @@ Write the container file with
 singularity build SalomeMeca2025_mpi.sif SalomeMeca2025_mpi
 ```
 
-If all went well, move the container back to your user's home
+The size of the  container should be ~8.1GiB. If all went well, move the container back to your user's home
 
 ```
 mv alomeMeca2025_mpi.sif ~/
