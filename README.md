@@ -77,7 +77,7 @@ git clone --branch 17.5.0 https://gitlab.com/codeaster/src.git
 git clone https://gitlab.com/codeaster/devtools.git
 ```
 
-Let'S build this version, all the correct prerequisites are already present in the container. You can check this on Code_Aster's GitLab page: https://gitlab.com/codeaster-opensource-documentation/opensource-installation-development/-/blob/main/devel/changelog.md . 
+Let's build this version, all the correct prerequisites are already present in the container. You can check this on Code_Aster's GitLab page: https://gitlab.com/codeaster-opensource-documentation/opensource-installation-development/-/blob/main/devel/changelog.md . 
 
 ```
 cd src
