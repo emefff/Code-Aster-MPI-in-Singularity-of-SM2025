@@ -188,7 +188,7 @@ If all this worked correctly, you are ready to use Coder_Aster 17.5 with MPI dir
 
 Have fun,
 
-emefff.
+emefff@gmx.at
 
 
 
