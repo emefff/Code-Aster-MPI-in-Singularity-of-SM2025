@@ -2,9 +2,8 @@
 31.08.2026 Repository created
 
 ____________________________________________________________________________________________________________________
-Download container built according to recipe below at: **update link**
+Download container built according to recipe below at: https://drive.google.com/file/d/1fpIdvpj9AukEh4rmT7Riem-IhY_tVuXP/view?usp=drive_link
 ____________________________________________________________________________________________________________________
-
 
 
 In the following tutorial we will show how to build the MPI Version of Code Aster 17.5 inside the Singularity Container of Salome-Meca 2025. This work is largely based on https://github.com/jcugnoni/SalomeMeca2024_Code-AsterMPI with some updates and minor changes in the process.
