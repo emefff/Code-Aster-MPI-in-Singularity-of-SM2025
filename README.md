@@ -24,9 +24,7 @@ appear and Salome-Meca would not launch. The solution is to comment some of thes
 >#libGLX.so
 
 ____________________________________________________________________________________________________________________
-Let's start with the build process.
-
-For this build we use singularity-ce version 4.4.2-noble .
+Let's start with the build process. For this build we use singularity-ce version 4.4.2-noble .
 
 Download the necessary Singularity Container of Salome-Meca 2025 from https://open-simulation-center.org/fr/downloads/code_aster/SALOME_MECA/2025
 
