@@ -47,8 +47,8 @@ mkdir SalomeMeca2025_MPI
 Move the downloaded container into the new dir and cd into dir:
 
 ```
-mv salome_meca-lgpl-2025.1.0-1-20251026-scibian-12.sif SalomeMeca2025_MPI
-cd SalomeMeca2025_MPI
+mv salome_meca-lgpl-2025.1.0-1-20251026-scibian-12.sif SalomeMeca2025_MPI/
+cd SalomeMeca2025_MPI/
 ```
 
 Build the sandbox we'll be working in with
