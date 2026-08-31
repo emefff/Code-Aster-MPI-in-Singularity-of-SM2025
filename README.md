@@ -96,6 +96,21 @@ We need to register CA 17.5 in Salome Meca so it can be chosen in the drop-down 
 echo "vers : stable_mpi:/opt/codeaster/install/mpi/share/aster" >> /opt/salome-meca/2025/V2025.1.0_scibian_univ/tools/Code_aster_frontend-202510/etc/codeaster/aster
 ```
 
+Fixing of the as_run version is also necessary for the new mpi version:
+
+```
+mv /usr/local/bin/as_run /usr/local/bin/as_run_23
+ln -s /opt/salome-meca/2025/V2025.1.0_scibian_univ/tools/Code_aster_frontend-202510/bin/as_run /usr/local/bin/as_run
+```
+
+Verify the last command with
+
+```
+ls -l /usr/local/bin/as_run
+```
+
+It should show " /usr/local/bin/as_run -> /opt/salome-meca/2025/V2025.1.0_scibian_univ/tools/Code_aster_frontend-202510/bin/as_run "
+
 
 
 
