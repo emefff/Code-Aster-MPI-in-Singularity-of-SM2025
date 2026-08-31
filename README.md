@@ -30,7 +30,7 @@ For this build we use singularity-ce version 4.4.2-noble .
 
 Download the necessary Singularity Container of Salome-Meca 2025 from https://open-simulation-center.org/fr/downloads/code_aster/SALOME_MECA/2025
 
-and place it in your home folder. The file size is ~5.7GiB.
+and place it in your home folder. The file size is ~5.7GiB. The exact filename is salome_meca-lgpl-2025.1.0-1-20251026-scibian-12.sif .
 
 Open a bash terminal and
 
@@ -45,6 +45,45 @@ We need a new dir for this whole process so
 ```
 mkdir SalomeMeca2025_MPI
 ```
+
+Move the downloaded container into the new dir and cd into dir:
+
+```
+mv salome_meca-lgpl-2025.1.0-1-20251026-scibian-12.sif SalomeMeca2025_MPI
+cd SalomeMeca2025_MPI
+```
+
+Build the sandbox we'll be working in with
+
+```
+singularity build --sandbox SalomeMeca2025_mpi salome_meca-lgpl-2025.1.0-1-20251026-scibian-12.sif
+```
+
+Enter the sandbox in writable mode
+
+```
+singularity shell --writable SalomeMeca2025_mpi
+```
+You are now in the container, the terminal should show "Singularity>". We need a new dir inside the container for the source code of Coder_Aster:
+
+```
+cd /opt/
+mkdir codeaster
+cd codeaster
+```
+
+The current most modern "single digit" version of Coder_Aster is 17.5, so we want to check out this version with git.
+
+```
+git clone --branch 17.5.0 https://gitlab.com/codeaster/src.git
+git clone https://gitlab.com/codeaster/devtools.git
+```
+
+Build this version, all the correct prerequisites are already present in the container. You can check this on Code_Aster's GitLab page: https://gitlab.com/codeaster-opensource-documentation/opensource-installation-development/-/blob/main/devel/changelog.md
+
+
+
+
 
 
 
