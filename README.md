@@ -156,7 +156,7 @@ mv alomeMeca2025_mpi.sif ~/
 cd
 ```
 
-You can launch this container with (the binds are necessary for Asterstudy to work correctly, as is using the explicit command for salome. Why? WDK):
+You can launch this container with (the binds are necessary for Asterstudy to work correctly, as is using the explicit command for salome, because exec needs it):
 
 ```
 singularity exec --nv \
