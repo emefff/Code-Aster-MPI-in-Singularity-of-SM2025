@@ -167,7 +167,7 @@ singularity exec --nv \
   /opt/salome-meca/2025/V2025.1.0_scibian_univ/prerequisites/Cea_archive-9130/salome
 ```
 
-If you do not have an Nvidia GPU remove the "--n" from above command.
+If you do not have an Nvidia GPU remove the "--nv" from above command.
 
 Salome-Meca 2025 should launch correctly. The version drop-down menu in Asterstudy should feature the new version:
 
