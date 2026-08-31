@@ -111,6 +111,11 @@ ls -l /usr/local/bin/as_run
 
 It should show " /usr/local/bin/as_run -> /opt/salome-meca/2025/V2025.1.0_scibian_univ/tools/Code_aster_frontend-202510/bin/as_run "
 
+```
+
+```
+
+
 
 
 
