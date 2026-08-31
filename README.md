@@ -70,7 +70,7 @@ mkdir codeaster
 cd codeaster
 ```
 
-The current most modern "single digit" version of Coder_Aster is 17.5, so we want to check out this version with git.
+The current most modern ".0" version of Coder_Aster is 17.5.0, so we want to check out this version with git. In the future, other versions will be available in the 17.x branch.
 
 ```
 git clone --branch 17.5.0 https://gitlab.com/codeaster/src.git
