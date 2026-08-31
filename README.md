@@ -174,6 +174,9 @@ If you do not have an Nvidia GPU remove the "--n" from above command.
 Salome-Meca 2025 should launch correctly. The version drop-down menu in Asterstudy should feature the new version:
 
 
+<p align="center">
+  <img src="https://github.com/user-attachments/assets/b64dc94a-2357-4725-8836-c8bf11012b87" style="width:50%; height:auto;" />
+</p>![Uploading Bildschirmfoto vom 2026-08-31 13-26-33.png…]()
 
 
 A blank run of Asterstudy should show "MPI: actif" in the log:
