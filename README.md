@@ -69,7 +69,7 @@ mkdir codeaster
 cd codeaster
 ```
 
-The current most modern ".0" version of Coder_Aster is 17.5.0, so we want to check out this version with git. In the future, other versions will be available in the 17.x branch.
+The most recent ".0" version of Coder_Aster is 17.5.0, so we want to check out this version with git. In the future, other versions will be available in the 17.x branch.
 
 ```
 git clone --branch 17.5.0 https://gitlab.com/codeaster/src.git
@@ -152,7 +152,7 @@ singularity build SalomeMeca2025_mpi.sif SalomeMeca2025_mpi
 The size of the  container should be ~8.1GiB. If all went well, move the container back to your user's home
 
 ```
-mv alomeMeca2025_mpi.sif ~/
+mv SalomeMeca2025_mpi.sif ~/
 cd
 ```
 
