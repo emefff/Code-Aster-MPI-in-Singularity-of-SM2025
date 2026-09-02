@@ -130,7 +130,7 @@ shows " Entrez: numéro de ligne, numéro  de colonne: "
 Editor should jump to line 480, search for the line beginning with "proc = ......." and comment this line:
 >                # proc = run(cmd, shell=True, check=False)
 
-and/or replace it with this code
+add or replace it with this code
 >                cmdpfx ="lst=`env | grep OMPI_ | cut -d = -f 1`; for item in $lst; do echo 'unset ' $item; unset $item; done; export PATH=/usr/local/bin:$PATH; "
 >                proc = run(cmdpfx+cmd, shell=True, check=False, capture_output=False)
 
