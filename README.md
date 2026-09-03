@@ -1,6 +1,6 @@
 # Code-Aster-MPI-in-Singularity-of-SM2025
 31.08.2026 Repository created
-
+04.09.2026 Tested with larger cases, some minor hiccups related to Salome but so far no problems related to the compiled version found
 ____________________________________________________________________________________________________________________
 Download container built according to recipe below at: https://drive.google.com/file/d/1fpIdvpj9AukEh4rmT7Riem-IhY_tVuXP/view?usp=drive_link
 ____________________________________________________________________________________________________________________
